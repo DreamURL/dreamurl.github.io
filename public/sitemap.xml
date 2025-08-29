@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <!-- 루트 사이트 (자동 리다이렉트) -->
+  <!-- 루트 사이트: 반응속도 테스트 게임 -->
   <url>
     <loc>https://dreamurl.github.io/</loc>
     <lastmod>2025-01-29</lastmod>
@@ -10,82 +9,12 @@
     <priority>1.0</priority>
   </url>
   
-  <!-- 영어 반응속도 테스트 게임 -->
-  <url>
-    <loc>https://dreamurl.github.io/en</loc>
-    <lastmod>2025-01-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dreamurl.github.io/en"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://dreamurl.github.io/ko"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://dreamurl.github.io/es"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://dreamurl.github.io/zh"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://dreamurl.github.io/ja"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dreamurl.github.io/en"/>
-  </url>
-  
-  <!-- 한국어 반응속도 테스트 게임 -->
-  <url>
-    <loc>https://dreamurl.github.io/ko</loc>
-    <lastmod>2025-01-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dreamurl.github.io/en"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://dreamurl.github.io/ko"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://dreamurl.github.io/es"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://dreamurl.github.io/zh"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://dreamurl.github.io/ja"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dreamurl.github.io/en"/>
-  </url>
-  
-  <!-- 스페인어 반응속도 테스트 게임 -->
-  <url>
-    <loc>https://dreamurl.github.io/es</loc>
-    <lastmod>2025-01-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dreamurl.github.io/en"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://dreamurl.github.io/ko"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://dreamurl.github.io/es"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://dreamurl.github.io/zh"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://dreamurl.github.io/ja"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dreamurl.github.io/en"/>
-  </url>
-  
-  <!-- 중국어 반응속도 테스트 게임 -->
-  <url>
-    <loc>https://dreamurl.github.io/zh</loc>
-    <lastmod>2025-01-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dreamurl.github.io/en"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://dreamurl.github.io/ko"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://dreamurl.github.io/es"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://dreamurl.github.io/zh"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://dreamurl.github.io/ja"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dreamurl.github.io/en"/>
-  </url>
-  
-  <!-- 일본어 반응속도 테스트 게임 -->
-  <url>
-    <loc>https://dreamurl.github.io/ja</loc>
-    <lastmod>2025-01-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dreamurl.github.io/en"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://dreamurl.github.io/ko"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://dreamurl.github.io/es"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://dreamurl.github.io/zh"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://dreamurl.github.io/ja"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dreamurl.github.io/en"/>
-  </url>
-  
   <!-- diastr 프로젝트 사이트 -->
   <url>
     <loc>https://dreamurl.github.io/diastr/</loc>
     <lastmod>2025-01-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   
 </urlset>

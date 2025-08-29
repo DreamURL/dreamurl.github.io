@@ -1,59 +1,51 @@
 # 🎯 Reaction Time Test - Multi-Language Gaming Platform
 
-A professional-grade reaction speed testing game with advanced internationalization and SEO optimization.
+A professional-grade reaction speed testing game with multi-language support and SEO optimization.
 
 ## 🌍 **Multi-Language Support**
 
-- **🇺🇸 English** - `/en` - Global audience
-- **🇰🇷 한국어** - `/ko` - Korean users  
-- **🇪🇸 Español** - `/es` - Spanish-speaking countries
-- **🇨🇳 中文** - `/zh` - Chinese users
-- **🇯🇵 日本語** - `/ja` - Japanese users
+- **🇺🇸 English** (Default)
+- **🇰🇷 한국어** 
+- **🇪🇸 Español**
+- **🇨🇳 中文**
+- **🇯🇵 日本語**
+
+Switch languages using the flag buttons at the top of the page.
 
 ## 🚀 **Features**
 
-- **Automatic Language Detection**: Detects user's country and redirects to appropriate language
-- **SEO Optimized**: Individual meta tags, sitemap, and hreflang for each language
+- **Multi-Language Interface**: Support for 5 languages with instant switching
+- **SEO Optimized**: Clean URLs and meta tags for search engines
 - **Responsive Design**: Works perfectly on all devices
-- **Performance Optimized**: Fast loading with modern React patterns
-- **AdSense Ready**: Optimized for monetization across all language versions
+- **Performance Optimized**: Fast loading with modern React patterns and production Tailwind CSS
+- **AdSense Ready**: Optimized for monetization with clean, professional layout
 
 ## 🔧 **Tech Stack**
 
 - **Frontend**: React 19, TypeScript, Tailwind CSS
-- **Routing**: React Router DOM v6 with language-based routes
 - **Build Tool**: Vite
 - **Deployment**: GitHub Pages with automated CI/CD
-- **SEO**: Dynamic meta tags, structured data, multilingual sitemap
+- **SEO**: Meta tags, sitemap, structured data
 
 ## 🏗️ **Project Structure**
 
 ```
 ├── src/
-│   ├── components/
-│   │   ├── GamePage.tsx         # Main game component
-│   │   ├── SEOHead.tsx          # Dynamic SEO meta tags
-│   │   └── LanguageRedirect.tsx # Auto language detection
-│   ├── utils/
-│   │   └── languageDetector.ts  # Language/country detection logic
 │   ├── types.ts                 # TypeScript definitions
-│   └── translations.ts          # Multi-language content
+│   ├── translations.ts          # Multi-language content
+│   └── index.css               # Tailwind CSS
 ├── public/
-│   ├── sitemap.xml             # Multi-language sitemap
+│   ├── sitemap.xml             # SEO sitemap
 │   ├── robots.txt              # SEO configuration
 │   └── ads.txt                 # AdSense verification
+├── App.tsx                     # Main application component
 └── .github/workflows/
     └── deploy.yml              # Automated deployment
 ```
 
 ## 🌐 **URL Structure**
 
-- `https://dreamurl.github.io/` → Auto-detects language and redirects
-- `https://dreamurl.github.io/en` → English version
-- `https://dreamurl.github.io/ko` → Korean version  
-- `https://dreamurl.github.io/es` → Spanish version
-- `https://dreamurl.github.io/zh` → Chinese version
-- `https://dreamurl.github.io/ja` → Japanese version
+- `https://dreamurl.github.io/` → Single-page application with language switching
 
 ## 💻 **Development**
 
