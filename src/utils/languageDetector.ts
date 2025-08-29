@@ -33,8 +33,8 @@ export const detectBrowserLanguage = (): Language => {
 };
 
 // URL에서 언어 코드 추출
-export const getLanguageFromPath = (): Language | null => {
-  const path = window.location.pathname;
+export const getLanguageFromPath = (customPath?: string): Language | null => {
+  const path = customPath || window.location.pathname;
   const segments = path.split('/').filter(Boolean);
   const firstSegment = segments[0];
   

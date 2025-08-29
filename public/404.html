@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Reaction Time Test</title>
+    <script>
+        // GitHub Pages SPA 라우팅 해결책
+        // 404 페이지에서 실제 앱으로 리다이렉트
+        const path = window.location.pathname.slice(1);
+        const query = window.location.search;
+        const hash = window.location.hash;
+        
+        // 경로를 세션스토리지에 저장
+        if (path) {
+            sessionStorage.setItem('redirectPath', path + query + hash);
+        }
+        
+        // 루트로 리다이렉트
+        window.location.replace(window.location.origin);
+    </script>
+</head>
+<body>
+    <div style="font-family: system-ui; text-align: center; padding: 50px;">
+        <h2>Redirecting...</h2>
+        <p>Detecting your preferred language...</p>
+    </div>
+</body>
+</html>

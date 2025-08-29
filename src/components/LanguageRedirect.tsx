@@ -1,15 +1,31 @@
 import { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
-import { detectUserLanguage } from '../utils/languageDetector';
+import { detectUserLanguage, getLanguageFromPath } from '../utils/languageDetector';
 import type { Language } from '../types';
 
 export const LanguageRedirect = () => {
   const [detectedLanguage, setDetectedLanguage] = useState<Language | null>(null);
+  const [redirectPath, setRedirectPath] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const detectAndRedirect = async () => {
       try {
+        // 404.html에서 리다이렉트된 경로 확인
+        const savedPath = sessionStorage.getItem('redirectPath');
+        if (savedPath) {
+          sessionStorage.removeItem('redirectPath');
+          
+          // 저장된 경로에서 언어 추출
+          const pathLanguage = getLanguageFromPath(savedPath);
+          if (pathLanguage) {
+            setRedirectPath(`/${savedPath}`);
+            setIsLoading(false);
+            return;
+          }
+        }
+        
+        // 일반적인 언어 감지
         const language = await detectUserLanguage();
         setDetectedLanguage(language);
       } catch (error) {
@@ -32,6 +48,11 @@ export const LanguageRedirect = () => {
         <p className="text-gray-400 text-sm mt-2">언어를 감지하는 중...</p>
       </div>
     );
+  }
+
+  // 404에서 리다이렉트된 경로가 있으면 해당 경로로
+  if (redirectPath) {
+    return <Navigate to={redirectPath} replace />;
   }
 
   // 감지된 언어로 리다이렉트

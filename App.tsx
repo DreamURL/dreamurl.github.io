@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './src/index.css';
 import GamePage from './src/components/GamePage';
 import LanguageRedirect from './src/components/LanguageRedirect';
 
