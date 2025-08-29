@@ -1,0 +1,5 @@
+{
+  "name": "Reaction Time Test",
+  "description": "A simple game to test your reaction speed. Click the black dot as fast as you can when it appears. Your average time over five rounds will be calculated.",
+  "requestFramePermissions": []
+}

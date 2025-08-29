@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://dreamurl.github.io/sitemap.xml
+
+# AdSense ads.txt file
+# Available at: https://dreamurl.github.io/ads.txt
